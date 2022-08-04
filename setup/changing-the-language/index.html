@@ -32,7 +32,7 @@
 <a id=__codelineno-3-10 name=__codelineno-3-10 href=#__codelineno-3-10></a>
 <a id=__codelineno-3-11 name=__codelineno-3-11 href=#__codelineno-3-11></a><span class=cm>&lt;!-- Re-export translations --&gt;</span>
 <a id=__codelineno-3-12 name=__codelineno-3-12 href=#__codelineno-3-12></a>{% macro t(key) %}{{
-<a id=__codelineno-3-13 name=__codelineno-3-13 href=#__codelineno-3-13></a>  override(key) or language(key) or fallback.t(key)
+<a id=__codelineno-3-13 name=__codelineno-3-13 href=#__codelineno-3-13></a>  override(key) or language.t(key) or fallback.t(key)
 <a id=__codelineno-3-14 name=__codelineno-3-14 href=#__codelineno-3-14></a>}}{% endmacro %}
 </code></pre></div> <ol> <li> <p>Note that <code>en</code> must always be used as a fallback language, as it's the default theme language.</p> </li> <li> <p>Check the <a href=https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/languages/ >list of available languages</a>, pick the translation you want to override for your language and add them here.</p> </li> </ol> </div> <div class=tabbed-block> <div class=highlight><pre><span></span><code><a id=__codelineno-4-1 name=__codelineno-4-1 href=#__codelineno-4-1></a><span class=nt>theme</span><span class=p>:</span><span class=w></span>
 <a id=__codelineno-4-2 name=__codelineno-4-2 href=#__codelineno-4-2></a><span class=w>  </span><span class=nt>language</span><span class=p>:</span><span class=w> </span><span class="l l-Scalar l-Scalar-Plain">custom</span><span class=w></span>
